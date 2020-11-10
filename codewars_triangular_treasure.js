@@ -14,5 +14,13 @@ You need to return the nth triangular number. You should return 0 for out of ran
   */
 
   // Return the nth triangular number
-function triangular( n ) {
+const triangular = ( n ) => {
+  let counter = 0;
+  if(n <= 0) {
+    return 0;
+  }
+  for(let i = 0; i < n + 1; i++) {
+    counter += i;
+  }
+  return counter;
 }
